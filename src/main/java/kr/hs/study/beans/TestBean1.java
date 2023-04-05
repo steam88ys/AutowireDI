@@ -1,30 +1,20 @@
 package kr.hs.study.beans;
 
-import lombok.Data;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
-@Data
-
+@Component
 public class TestBean1 {
+    @Value("10")
+    private int data1;
+    @Value("11.11")
+    private double data2;
 
-    private DataBean1 data1;
-    private DataBean1 data2;
-
-
-    public DataBean1 getData1() {
+    public int getData1() {
         return data1;
     }
 
-    public void setData1(DataBean1 data1) {
-        this.data1 = data1;
-    }
-
-
-    public DataBean1 getData2() {
+    public double getData2() {
         return data2;
     }
-
-    public void setData2(DataBean1 data2) {
-        this.data2 = data2;
-    }
-
 }
