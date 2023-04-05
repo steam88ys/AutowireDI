@@ -7,11 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringBasic" />
+        <module name="AutowireDI" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="AutowireDI" target="11" />
+      <module name="AutowireDI2" target="11" />
+      <module name="SpringBasic" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
